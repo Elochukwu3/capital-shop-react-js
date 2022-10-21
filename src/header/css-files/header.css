@@ -9,10 +9,15 @@ header.firstHeader {
   background: #fff;
   padding: 0.6rem 0;
   box-shadow: 1px 0px 2px 5px #ccc;
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 100%; */
   font-family: "Roboto", sans-serif;
+}
+.navList{
+  display: flex !important;
+  padding: 0;
+  margin: 0;
 }
