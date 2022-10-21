@@ -22,3 +22,7 @@ header.firstHeader {
   margin: 0;
   /* width: 90% !important; */
 }
+nav .item{
+  padding-left: .8rem !important;
+  color: black;
+}
