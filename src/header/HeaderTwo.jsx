@@ -1,7 +1,7 @@
 import React from "react";
 import { Cart, Person, Search } from "react-bootstrap-icons";
 import { Grid, Image, List,} from "semantic-ui-react";
-import "./css-files/header.css";
+import "../css-files/header.css";
 
 
 export default function HeaderTwo() {

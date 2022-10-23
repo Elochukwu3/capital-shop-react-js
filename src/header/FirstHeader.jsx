@@ -1,6 +1,6 @@
 import {Facebook, Instagram, Twitter, Youtube, Pinterest } from 'react-bootstrap-icons';
 import { List, Grid } from 'semantic-ui-react';
-import './css-files/header.css';
+import '../css-files/header.css';
 
 export default function FirstHader() {
   return (
