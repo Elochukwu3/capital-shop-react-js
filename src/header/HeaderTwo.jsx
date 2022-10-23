@@ -2,15 +2,7 @@ import React from "react";
 import { Cart, Person, Search } from "react-bootstrap-icons";
 import { Grid, Image, List,} from "semantic-ui-react";
 import "./css-files/header.css";
-const POPUP = {
-  background: "red",
-  padding: ".2rem .5rem",
-  left: "0",
-  borderRadius: "5px",
-  border: "unset",
-  position: "absolute",
-  top: "-1.7rem",
-};
+
 
 export default function HeaderTwo() {
   return (
@@ -34,16 +26,12 @@ export default function HeaderTwo() {
             <List.Item>Home</List.Item>
             <List.Item>Men</List.Item>
             <List.Item>Women</List.Item>
-            {/* <Popup
-              style={POPUP}
-              size="tiny"
-              open
-              content="new"
-              trigger={<Button as={'p'} content="Baby Collection" />}
-            /> */}
+            <List.Item>
+              Pages
+            </List.Item>
             <List.Item>
             <details>
-              <summary>Baby Collections</summary>
+              <summary>Baby Collections <span>New</span></summary>
               <div className="dropDown">
               <p>Cloths</p>
               <p>Shoes</p>
