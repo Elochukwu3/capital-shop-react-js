@@ -26,3 +26,14 @@ nav .item{
   padding-left: .8rem !important;
   color: black;
 }
+details{
+  position: relative;
+}
+.dropDown{
+  position: absolute;
+  z-index: 10;
+  background: black;
+  color: #fff;
+  margin: 0;
+  padding: 1rem 1.5rem;
+}

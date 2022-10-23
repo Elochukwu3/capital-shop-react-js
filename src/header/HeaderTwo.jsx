@@ -1,6 +1,6 @@
 import React from "react";
 import { Cart, Person, Search } from "react-bootstrap-icons";
-import { Dropdown, Grid, Image, List, Popup, Button } from "semantic-ui-react";
+import { Grid, Image, List,} from "semantic-ui-react";
 import "./css-files/header.css";
 const POPUP = {
   background: "red",
@@ -42,27 +42,16 @@ export default function HeaderTwo() {
               trigger={<Button as={'p'} content="Baby Collection" />}
             /> */}
             <List.Item>
-              <div
-                role="listbox"
-                aria-expanded="false"
-                class="ui dropdown"
-                tabindex="0"
-            
-                <i aria-hidden="true" class="dropdown icon"></i>
-                <div class="menu transition">
-                  <div role="option" class="item">
-                    <span class="text">New</span>
-                  </div>
-                  <div role="option" class="item">
-                    <span class="description">ctrl + o</span>
-                    <span class="text">Open...</span>
-                  </div>
-                  <div role="option" class="item">
-                    <span class="description">ctrl + s</span>
-                    <span class="text">Save as...</span>
-                  </div>
-                </div>
+            <details>
+              <summary>Baby Collections</summary>
+              <div className="dropDown">
+              <p>Cloths</p>
+              <p>Shoes</p>
+              <p>Napkin</p>
+              <p>Stockins</p>
+              <p>Sweater</p>
               </div>
+            </details>
             </List.Item>
             <List.Item>Blog</List.Item>
             <List.Item>Contact</List.Item>
