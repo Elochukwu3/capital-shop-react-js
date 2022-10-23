@@ -34,22 +34,35 @@ export default function HeaderTwo() {
             <List.Item>Home</List.Item>
             <List.Item>Men</List.Item>
             <List.Item>Women</List.Item>
-            <Popup
+            {/* <Popup
               style={POPUP}
               size="tiny"
               open
               content="new"
-              trigger={<Button content="Baby Collection" />}
-            />
+              trigger={<Button as={'p'} content="Baby Collection" />}
+            /> */}
             <List.Item>
-              <Dropdown text="Pages">
-                <Dropdown.Menu>
-                  <Dropdown.Item>Home</Dropdown.Item>
-                  <Dropdown.Item>Contact</Dropdown.Item>
-                  <Dropdown.Item>About</Dropdown.Item>
-                  <Dropdown.Item>Discover</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
+              <div
+                role="listbox"
+                aria-expanded="false"
+                class="ui dropdown"
+                tabindex="0"
+            
+                <i aria-hidden="true" class="dropdown icon"></i>
+                <div class="menu transition">
+                  <div role="option" class="item">
+                    <span class="text">New</span>
+                  </div>
+                  <div role="option" class="item">
+                    <span class="description">ctrl + o</span>
+                    <span class="text">Open...</span>
+                  </div>
+                  <div role="option" class="item">
+                    <span class="description">ctrl + s</span>
+                    <span class="text">Save as...</span>
+                  </div>
+                </div>
+              </div>
             </List.Item>
             <List.Item>Blog</List.Item>
             <List.Item>Contact</List.Item>
