@@ -25,3 +25,9 @@ section .mainpageText{
     text-transform: uppercase;
     font-size: .9rem;
 }
+.active{
+    opacity: 1;
+}
+.deactive{
+    opacity: 0;
+}
