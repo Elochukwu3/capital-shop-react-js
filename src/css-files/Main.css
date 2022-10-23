@@ -3,7 +3,7 @@ div .mainPage{
     position: relative;
     width: 100%;
     max-width: 10005px;
-    min-height: 80vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 section .mainpageText{
@@ -27,7 +27,10 @@ section .mainpageText{
 }
 .active{
     opacity: 1;
+    transition: background, color, .2s , ease-in-out;
+    height: auto;
 }
 .deactive{
     opacity: 0;
+    height: auto;
 }
