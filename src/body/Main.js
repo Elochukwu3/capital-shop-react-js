@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Image, Segment } from "semantic-ui-react";
 import MainButton from "./MainButton";
 import "../css-files/Main.css";
-import data from "../Data";
+import { data } from "../Data";
 
-export default function Main({children}) {
+export default function Main({ children }) {
   const [slider, setSlider] = useState(0);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export default function Main({children}) {
   const mapItems = data.map(({ img, text, boldText }, index) => {
     return (
       <div className={slider === index ? "active" : "deactive"} key={index}>
-        <section>
+        <section style={{height:'100%'}}>
           {" "}
           <Image
             src={img}
@@ -32,7 +32,12 @@ export default function Main({children}) {
           <Segment
             basic
             textAlign="center"
-            style={{ padding: "0 8rem", opacity: ".6" }}
+            style={{
+              padding: "0 .1rem",
+              opacity: ".6",
+              widih: "140px",
+              minWidth: "120px",
+            }}
           >
             {text}
           </Segment>
@@ -42,10 +47,21 @@ export default function Main({children}) {
     );
   });
 
-  return(
-            <>
-            <div className="mainPage">{mapItems}</div>
-            <div>{children}</div>
-            </>
-         ) 
+  return (
+    <>
+      <div className="mainPage">{mapItems}</div>
+      <div className="outFits">{children}</div>
+      <div className="trendinSection">
+        <div>Trending This Week</div>
+        <div className="middleMenu">
+          <ul style={{ display: "flex" }}>
+            <li>Men</li>
+            <li>Women</li>
+            <li>Baby</li>
+            <li>Fashion</li>
+          </ul>
+        </div>
+      </div>
+    </>
+  );
 }
