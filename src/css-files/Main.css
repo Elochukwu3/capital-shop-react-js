@@ -31,13 +31,14 @@ section .mainpageText {
 
 .active {
   width: 100vw;
-  /* height: 100vh; */
-  background-size: cover;
-  background-position: center;
+background-position:50% 50%;
   display: block !important;
-  object-fit: cover;
-  /* transition: background, color, 0.2s, ease-in-out; */
-  /* height: auto; */
+  -ms-interpolation-mode: nearest-neighbor !important;
+  /* position: relative !important; */
+  /* /* background: #ff0000  top center repeat-y;  */
+background-position: top center;
+  transition: background, color, 0.2s, ease-in-out;
+  height: 100vh;
 }
 .deactive {
   opacity: 0;

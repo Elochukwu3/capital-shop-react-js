@@ -6,32 +6,29 @@ import { data } from "../Data";
 
 export default function Main({ children, stying, counter }) {
   const [slider, setSlider] = useState(0);
-useEffect(() => {
-  let tags = stying.current.children
-  tags=[...tags]
-  tags.forEach((element, index )=> {
-    element.style.borderBottom='none'
-   if (counter === index) {
-   element.style.borderBottom='4px solid red'
-  
-   }
-   
-  });
-}, [counter])
+  useEffect(() => {
+    let tags = stying.current.children;
+    tags = [...tags];
+    tags.forEach((element, index) => {
+      element.style.borderBottom = "none";
+      if (counter === index) {
+        element.style.borderBottom = "4px solid red";
+      }
+    });
+  }, [counter]);
 
- const changeColor =(m)=>{
-  return{
-    backgroundImage: 
-    `url(${m})`,
-    height:'100%',
-    marginTop:'-70px',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    position:'absolute',
-    display:'none'
-};
- }
-
+  const changeColor = (m) => {
+    return {
+      backgroundImage: `url(${m})`,
+      height: "100%",
+      backgroundRepeat: "no-repeat",
+      position: "absolute",
+      display: "none",
+      opacity: 1,
+       imageRendering: '-webkit-optimize-contrast' ,
+      
+    };
+  };
 
   useEffect(() => {
     const backChange = setInterval(
@@ -44,15 +41,12 @@ useEffect(() => {
 
   const mapItems = data.map(({ img, text, boldText }, index) => {
     return (
-      <div className={slider === index ? "active" : "deactive"} key={index} style={changeColor(img)}>
-        {/* <section style={{height:'100%'}}>
-          {" "}
-          <Image
-            src={img}
-            style={{ position: "absolute", zIndex: "-1", height: "100%", width:'100%',  }}
-          />
-        </section> */}
-        {/* <section className="mainpageText">
+      <div
+        className={slider === index ? "active" : "deactive"}
+        key={index}
+        style={changeColor(img)}
+      >
+        <section className="mainpageText">
           <p>Fashion Sale</p>
           <b style={{ textTransform: "capitalize" }}>{boldText}</b>
           <Segment
@@ -68,7 +62,7 @@ useEffect(() => {
             {text}
           </Segment>
           <MainButton name="shop Now" />
-        </section> */}
+        </section>
       </div>
     );
   });
@@ -81,12 +75,10 @@ useEffect(() => {
         <div>Trending This Week</div>
         <div className="middleMenu">
           <ul style={{ display: "flex" }} ref={stying}>
-
             <li>Men</li>
             <li>Women</li>
             <li>Baby</li>
             <li>Fashion</li>
-
           </ul>
         </div>
       </div>
