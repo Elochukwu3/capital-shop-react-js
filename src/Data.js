@@ -6,13 +6,13 @@ export const data =
 
 },
 {
-    img:'.//images/cloth2.webp',
+    img:'.//images/cloths.jpg',
     text:' Pellentesque habitant morbi tristique senectus et netus et malesuada fames   ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,',
     boldText:' minimal menz style'
 
 },
 {
-    img:'.//images/cloth3.webp',
+    img:'.//images/men.jpg',
     text:' Pellentesque habitant morbi tristique senectus et netus et malesuada fames   ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,',
     boldText:' minimal menz style'
 

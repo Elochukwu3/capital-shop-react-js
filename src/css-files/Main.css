@@ -33,10 +33,9 @@ section .mainpageText {
   width: 100vw;
 background-position:50% 50%;
   display: block !important;
+  background-clip: border-box;
+  background-size: cover;
   -ms-interpolation-mode: nearest-neighbor !important;
-  /* position: relative !important; */
-  /* /* background: #ff0000  top center repeat-y;  */
-background-position: top center;
   transition: background, color, 0.2s, ease-in-out;
   height: 100vh;
 }

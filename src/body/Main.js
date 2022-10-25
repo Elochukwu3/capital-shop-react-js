@@ -20,13 +20,13 @@ export default function Main({ children, stying, counter }) {
   const changeColor = (m) => {
     return {
       backgroundImage: `url(${m})`,
-      height: "100%",
+      height: "100vh",
       backgroundRepeat: "no-repeat",
       position: "absolute",
       display: "none",
       opacity: 1,
        imageRendering: '-webkit-optimize-contrast' ,
-      
+ 
     };
   };
 
