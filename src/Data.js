@@ -1,18 +1,18 @@
 export const data =
 [{
-    img:'.//images/ladyblue.png',
+    img:'./images/ladyblue.png',
     text:' Pellentesque habitant morbi tristique senectus et netus et malesuada fames   ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,',
     boldText:' minimal menz style'
 
 },
 {
-    img:'.//images/styledollcolor.png',
+    img:'.//images/cloth2.webp',
     text:' Pellentesque habitant morbi tristique senectus et netus et malesuada fames   ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,',
     boldText:' minimal menz style'
 
 },
 {
-    img:'.//images/snowwhite.png',
+    img:'.//images/cloth3.webp',
     text:' Pellentesque habitant morbi tristique senectus et netus et malesuada fames   ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,',
     boldText:' minimal menz style'
 
@@ -50,6 +50,30 @@ export const sliderData =
     price:'$400.00',
     discount:'$40.00',
     id:'img4'
+}
+,
+{
+    img:'.//images/snowwhite.png',
+    text:'Bikini crop',
+    price:'$400.00',
+    discount:'$40.00',
+    id:'img0'
+}
+,
+{
+    img:'.//images/snowwhite.png',
+    text:'Bikini crop',
+    price:'$400.00',
+    discount:'$40.00',
+    id:'img5'
+}
+,
+{
+    img:'.//images/snowwhite.png',
+    text:'Bikini crop',
+    price:'$400.00',
+    discount:'$40.00',
+    id:'img6'
 }
 ]
 

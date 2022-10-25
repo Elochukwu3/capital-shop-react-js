@@ -13,15 +13,14 @@ import { sliderData } from './Data';
 
 function App() {
   const [carousel, setCarousel] = useState(0);
-  let sliderPosition = 0
-  // const styling = useRef()
+  const styling = useRef()
+  console.log(carousel + 'each');
   const forwardCarousel = () =>{
-    setCarousel(prev=> prev < sliderData.length -1 ? prev + 1 : prev = 0)
     
-    // styling.current.style.display ='none'
+    setCarousel(prev=> prev < sliderData.length - 4 ? prev + 1 : prev = 0)
   }
   const prevCarousel =()=>{
-    setCarousel((prev)=>prev <= 0 ? prev = sliderData.length -1  : prev - 1 )
+    setCarousel((prev)=>prev <= 0 ? prev = sliderData.length - 4  : prev - 1 )
     
   }
 
@@ -34,7 +33,7 @@ function App() {
       </section>
       <main>
         <section>
-          <Main>
+          <Main stying={styling} counter={carousel}>
             <Categories name={"Men's fashion"} imgUrl={'./images/yellow.webp'}/>
             <Categories name={"Women's fashion"} imgUrl={'./images/brownhandbag.png'}/>
             <Categories name={'Baby Fashion'} imgUrl={'./images/pinkoutfit.png'}/>
@@ -42,7 +41,7 @@ function App() {
         </section>
         <section className={"sliderSection"}>
          <div className='sliderWrapper'>
-         <Slider handleEvent={forwardCarousel} counter={carousel} handleEventDec={prevCarousel} slider={sliderData}/>
+         <Slider handleEvent={forwardCarousel} counter={carousel} handleEventDec={prevCarousel} slider={sliderData} />
          </div>
         </section>
       </main>
