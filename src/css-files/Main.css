@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
 div .mainPage {
   position: relative;
   width: 100%;
@@ -15,7 +16,18 @@ section .mainpageText {
   width: 50%;
   transform: translateY(50%, -50%);
   margin: auto 0 !important;
-  top: 37%;
+  top: 27%;
+}
+section .mainpageText :not(b, button){
+  color: rgb(117, 113, 113); 
+}
+section .mainpageText p{
+  font-family: 'Rouge Script', cursive;
+  color: red;
+  font-size: 3em;
+  padding-bottom: .7rem;
+  margin: 0!important;
+  font-size: 500;
 }
 .mainpageText b {
   font-size: 3em !important;
@@ -23,6 +35,7 @@ section .mainpageText {
 .mainpageText button {
   background: #000;
   color: #fff;
+  margin-top: .2rem;
   padding: 0.6rem 1.4rem;
   text-transform: uppercase;
   font-size: 0.9rem;
@@ -209,5 +222,9 @@ background-position:50% 50%;
   .arrow.right {
     right: 2% !important;
   }
+}
+.testimonialImg img{
+  width: 100px;
+  height: 100px;
 }
 /* "width: 2512px; opacity: 1; transform: translate3d(-1256px, 0px, 0px); transition: transform 500ms ease 0s;"> */

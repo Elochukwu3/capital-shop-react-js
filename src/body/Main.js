@@ -34,7 +34,7 @@ export default function Main({ children, stying, counter }) {
     const backChange = setInterval(
       () =>
         setSlider((prev) => (prev >= data.length - 1 ? (prev = 0) : prev + 1)),
-      1000
+      20000
     );
     return () => clearInterval(backChange);
   }, [slider]);
@@ -48,7 +48,7 @@ export default function Main({ children, stying, counter }) {
       >
         <section className="mainpageText">
           <p>Fashion Sale</p>
-          <b style={{ textTransform: "capitalize" }}>{boldText}</b>
+          <b style={{ textTransform: "capitalize", margin: 0 }}>{boldText}</b>
           <Segment
             basic
             textAlign="center"
@@ -57,6 +57,10 @@ export default function Main({ children, stying, counter }) {
               opacity: ".6",
               widih: "140px",
               minWidth: "120px",
+              fontSize: '1.5em',
+              color:'#ffff',
+              textShadow:'2px 2px 2px #000',
+            
             }}
           >
             {text}

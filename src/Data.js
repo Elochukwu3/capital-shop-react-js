@@ -1,24 +1,31 @@
 export const data =
 [{
-    img:'./images/ladyblue.png',
+    img:'./images/women2.jpeg',
     text:' Pellentesque habitant morbi tristique senectus et netus et malesuada fames   ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,',
     boldText:' minimal menz style'
 
 },
 {
-    img:'.//images/cloths.jpg',
+    img:'.//images/fgh.jpg',
+    text:" Always dress like it's the best day of your life.",
+    boldText:' minimal menz style'
+
+},
+{
+    img:'.//images/fashion1.webp',
     text:' Pellentesque habitant morbi tristique senectus et netus et malesuada fames   ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,',
     boldText:' minimal menz style'
 
 },
 {
-    img:'.//images/men.jpg',
+    img:'.//images/women.jpg',
     text:' Pellentesque habitant morbi tristique senectus et netus et malesuada fames   ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,',
     boldText:' minimal menz style'
 
-},
+}
+,
 {
-    img:'.//images/cloth12.webp',
+    img:'.//images/women3.jpeg',
     text:' Pellentesque habitant morbi tristique senectus et netus et malesuada fames   ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,',
     boldText:' minimal menz style'
 

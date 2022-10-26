@@ -9,6 +9,7 @@ import HeaderTwo from './header/HeaderTwo';
 import SubHeader from './header/SubHeader';
 import { useRef, useState } from 'react';
 import { sliderData } from './Data';
+import Testimonial from './body/Testimonial';
 
 
 function App() {
@@ -34,16 +35,20 @@ function App() {
       <main>
         <section>
           <Main stying={styling} counter={carousel}>
-            <Categories name={"Men's fashion"} imgUrl={'./images/yellow.webp'}/>
-            <Categories name={"Women's fashion"} imgUrl={'./images/brownhandbag.png'}/>
-            <Categories name={'Baby Fashion'} imgUrl={'./images/pinkoutfit.png'}/>
+            <Categories name={"Men's fashion"} imgUrl={'.//images/men4.jpeg'}/>
+            <Categories name={"Women's fashion"} imgUrl={'./images/cloths.jpg'}/>
+            <Categories name={'Baby Fashion'} imgUrl={'./images/babby.jpg'}/>
           </Main>
         </section>
         <section className={"sliderSection"}>
          <div className='sliderWrapper'>
          <Slider handleEvent={forwardCarousel} counter={carousel} handleEventDec={prevCarousel} slider={sliderData} />
          </div>
+         
         </section>
+        <div>
+          <Testimonial/>
+         </div>
       </main>
     </div>
   );
