@@ -43,7 +43,7 @@ export default function Testimonial() {
       {
         testiMonialData.length > 0? testiMonialData.map((m, index)=>{
           return(
-            <div className= {index === state.testimonial? 'testimonial-active': 'inactive'}>
+            <div className= {index === state.testimonial? 'testimonial-active': 'inactive'} key={index}>
       <div className='commentInner'>
       <h2>Customer Testimonial</h2>
         <div>
