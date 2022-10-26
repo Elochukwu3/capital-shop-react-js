@@ -10,6 +10,7 @@ import SubHeader from './header/SubHeader';
 import { useRef, useState } from 'react';
 import { sliderData } from './Data';
 import Testimonial from './body/Testimonial';
+import {ChevronLeft, ChevronRight } from 'react-bootstrap-icons';
 
 
 function App() {
@@ -46,9 +47,22 @@ function App() {
          </div>
          
         </section>
-        <div>
+        <div className='testimonialContainer'>
+          <span className="testimonial-Icon Right">
+        {" "}
+        <ChevronLeft/>
+      </span>
           <Testimonial/>
+      <span className="testimonial-Icon Right">
+        <ChevronRight/>
+      </span>
          </div>
+         <section className={"sliderSection"}>
+         <div className='sliderWrapper'>
+         <Slider handleEvent={forwardCarousel} counter={carousel} handleEventDec={prevCarousel} slider={sliderData} />
+         </div>
+         
+        </section>
       </main>
     </div>
   );
