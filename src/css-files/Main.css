@@ -218,10 +218,23 @@ background-position:50% 50%;
   background-color: #fff;
   padding: 40px 0;
 }
+.commentWrapper img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .testimonial-Icon{
   font-size: 2em;
   padding: 0 1rem;
   opacity: .5;
+}
+.testimonial-active{
+  opacity: 1;
+}
+.inactive{
+  opacity: 0;
+  position: absolute;
 }
 @media screen and (max-width: 410px) {
   .category {

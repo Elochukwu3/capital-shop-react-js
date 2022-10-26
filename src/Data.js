@@ -90,3 +90,29 @@ export const sliderData =
 }
 ]
 
+export const testiMonialData = [
+    {
+        sents1:'Great product/wears inspires greatness, love and great shinout which sets out',
+        sent2:'Yes this product is awesome have used it more',
+        sent3:'than three times',
+        testifiier:'Jude KalMax',
+        occupation:'Software engineer',
+        pics:'./images/wearingglass.png',
+    },
+    {
+        sents1:'Great product/wears inspires greatness, love and great shinout which sets out',
+        sent2:'Yes this product is awesome have used it more',
+        sent3:'than three times',
+        testifiier:'Joannes Gracius',
+        occupation:'Web desgner',
+        pics:'.//images/women3.jpeg',
+    },
+    {
+        sents1:'Good and renowned product, Best I have ever seen',
+        sent2:'Afoordable, good quality, etc...',
+        sent3:'Topnotch, try them and see',
+        testifiier:'Chriss mall',
+        occupation:'Photo grapher',
+        pics:'.//images/men4.jpeg',
+    },
+]
