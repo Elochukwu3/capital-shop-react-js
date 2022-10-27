@@ -1,0 +1,137 @@
+
+.footerWrapper{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 4rem;
+   flex-direction: column; 
+   align-items: center;
+
+}
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+    align-items: center;
+    padding: 2.3rem 0 3rem 0;
+
+}
+.footer-inner button{
+    background-color: red;
+    padding: .8rem .3rem;
+    width: 25%;
+    border: unset;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.inputContainer{
+    flex: 1;
+}
+.footer-inner input{
+    padding: 0 .7rem;
+    outline: none;
+    width: 70%;
+    height: 3rem;
+    margin-right: 7px;
+    font-weight: 500;
+}
+.footer-inner .suscribe{
+font-size: .7rem;
+padding-right: 10px;
+width: 30%;
+}
+.footer-inner .suscribe h3{
+    padding: 0 !important;
+    margin-bottom: .6rem;
+}
+.footer-inner .footer-iconss span{
+    margin-left: 1.7rem;
+    color: #677f8b;
+    font-size: 1.2rem;
+}
+.footerIn{
+    justify-content: space-between !important;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-top: 1px solid rgb(45, 45, 45);
+    border-bottom: 1px solid rgb(45, 45, 45);
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
+    
+
+  } 
+.gridNewsletter{
+    display: flex;
+    flex: 1;
+    list-style: none;
+    padding-left: 2rem;
+    gap: .1rem; 
+    flex-wrap: wrap;
+}
+.gridNewsletter ul{
+    list-style-type: none;
+    width: 18%;
+    /* padding-left: .5rem; */
+}
+.gridNewsletter ul li:not(h5){
+    font-size: .8rem;
+    margin: 0;
+    color: #ddd;
+    opacity: .6;
+    font-weight: bold;
+}
+.gridNewsletter h5 {
+    padding-bottom: 1rem;
+}
+.gridNewsletter ul li{
+    padding-top: .1rem !important;
+    padding-bottom: .1rem !important;
+}
+
+
+@media screen and (max-width: 670px) {
+    .footerIn{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .footerWrapper{
+      padding: 2rem 1rem !important;
+    
+    }
+}
+@media screen and (max-width: 600px) {
+    .footer-inner{
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    .footer-inner input{
+        padding: 0 .7rem;
+        outline: none;
+        width: 70%;
+        height: 2rem;
+        
+    }
+    .footer-inner button{
+        padding: .4rem 0;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .footer-inner{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    
+    }
+    .footer-inner .suscribe{
+        font-size: .7rem;
+        padding-right: 10px;
+        width: 100%;
+        }
+}

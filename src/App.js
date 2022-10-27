@@ -1,4 +1,3 @@
-import "./App.css";
 import Categories from "./body/Categories";
 import Main from "./body/Main";
 import Slider from "./body/Slider";
@@ -10,6 +9,7 @@ import { sliderData } from "./Data";
 import Testimonial from "./body/Testimonial";
 import CardHolder from "./body/CardHolder";
 import Icons from "./body/Icons";
+import Footer from "./body/Footer";
 
 function App() {
   const [carousel, setCarousel] = useState(0);
@@ -73,9 +73,10 @@ function App() {
             marginTop: "3rem",
             padding: "1rem 0",
             minHeight: "0",
+            paddingBottom:'3rem'
           }}
         >
-          <h2 style={{ padding: "2rem 0 1rem 0" }}>Latest News</h2>
+          <h2 style={{ padding: "2rem 0 1rem 0", textAlign:'center' }}>Latest News</h2>
           <div
             style={{
               display: "flex",
@@ -92,15 +93,19 @@ function App() {
                 "Looking nice and sweet is not a crime, we make you feel the vibe, with great products that shows love"
               }
             />
-            <CardHolder 
-            header={"Let's open the itailiano baggage"}
-             image={'./images/shoes.png'}
-             description={'Stoops to kill, italian kits, ready to be dessemble down to fashion wrings'}
-             />
-            <CardHolder 
-            header={'It glitters to be gold or ore'}
-            image={'./images/greensmallbottle.png'}
-            description={'Stoops to kill, italian kits, ready to be dessemble down to fashion wrings'}
+            <CardHolder
+              header={"Let's open the itailiano baggage"}
+              image={"./images/shoes.png"}
+              description={
+                "Stoops to kill, italian kits, ready to be dessemble down to fashion wrings"
+              }
+            />
+            <CardHolder
+              header={"It glitters to be gold or ore"}
+              image={"./images/greensmallbottle.png"}
+              description={
+                "Stoops to kill, italian kits, ready to be dessemble down to fashion wrings"
+              }
             />
           </div>
         </section>
@@ -111,17 +116,35 @@ function App() {
             alignItems: "center",
             flexWrap: "wrap",
             gap: "10px",
-            width:'100%',
-            background:'#fff',
-            padding:'2rem 0'
+            width: "100%",
+            background: "#fff",
+            padding: "4rem 0",
           }}
         >
-          <Icons icons={'./icons/services1.svg'} captions={'Free delivery on all orders'} msg={'fast & free delivery'} />
-          <Icons icons={'./icons/services2.svg'} captions={'Free delivery on all orders'} msg={'fast & free delivery'} />
-          <Icons icons={'./icons/services3.svg'} captions={'Free delivery on all orders'} msg={'fast & free delivery'} />
-          <Icons icons={'./icons/services4.svg'} captions={'Free delivery on all orders'} msg={'fast & free delivery'} />
-     
+          <Icons
+            icons={"./icons/services1.svg"}
+            captions={"Free delivery on all orders"}
+            msg={"fast & free delivery"}
+          />
+          <Icons
+            icons={"./icons/services2.svg"}
+            captions={"Free delivery on all orders"}
+            msg={"fast & free delivery"}
+          />
+          <Icons
+            icons={"./icons/services3.svg"}
+            captions={"Free delivery on all orders"}
+            msg={"fast & free delivery"}
+          />
+          <Icons
+            icons={"./icons/services4.svg"}
+            captions={"Free delivery on all orders"}
+            msg={"fast & free delivery"}
+          />
         </article>
+        <footer>
+          <Footer/>
+        </footer>
       </main>
     </div>
   );
