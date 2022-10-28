@@ -26,7 +26,7 @@ export default function HeaderTwo() {
         >
           <List
             className="row"
-            style={{ display: "flex", fontSize: "1rem", alignItems: "center" }}
+            style={{ display: "flex", fontSize: "1rem", alignItems: "center", textTransform:'uppercase' }}
             id="roww"
           >
             <List.Item style={{ padding: "0" }}>Home</List.Item>
@@ -52,7 +52,7 @@ export default function HeaderTwo() {
         <Grid.Column
           style={{ width: "auto", display: "flex", alignItems: "center" }}
         >
-          <List horizontal id="serchCo">
+          <List className="serchCo">
             <List.Item>
               <Search />
             </List.Item>

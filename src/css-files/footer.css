@@ -77,7 +77,6 @@ width: 30%;
 .gridNewsletter ul{
     list-style-type: none;
     width: 18%;
-    /* padding-left: .5rem; */
 }
 .gridNewsletter ul li:not(h5){
     font-size: .8rem;
@@ -107,11 +106,7 @@ width: 30%;
     }
 }
 @media screen and (max-width: 600px) {
-    .footer-inner{
-        flex-direction: column;
-        width: 100%;
     
-    }
     .footer-inner input{
         padding: 0 .7rem;
         outline: none;
@@ -120,7 +115,9 @@ width: 30%;
         
     }
     .inputContainer{
-        align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .footer-inner button{
         padding: .4rem .2rem;
@@ -132,7 +129,8 @@ width: 30%;
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
-    
+        align-items: center;
+        justify-content: center;
     }
     .footer-inner .suscribe{
         font-size: .7rem;
@@ -141,7 +139,21 @@ width: 30%;
         text-align: center;
         }
         .footer-inner .footer-iconss{
-            justify-content: center;
-            padding-top: 1rem;
+            display: flex;
+            padding-top: 1.5rem;
+            width: 100%;
+            margin: auto;
+            justify-content: space-around;
+        }
+        .gridNewsletter{
+            width: 100%;
+            padding-left: 0!important;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            place-items: center;
+        }
+        .gridNewsletter ul{
+            font-size: .5rem !important;
+           width: 30% !important;
         }
 }

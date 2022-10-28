@@ -8,15 +8,19 @@ div .mainPage {
 }
 .mainPage img {
   object-fit: fill;
+}.mainnBeforeText{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+padding-bottom: 2rem;
 }
 section .mainpageText {
-  position: absolute;
-  right: 0;
+  display: flex;
   flex-direction: column;
-  width: 50%;
-  transform: translateY(50%, -50%);
-  margin: auto 0 !important;
-  top: 27%;
+  align-items: center;
+  justify-content: center;
+  line-height: 20px;
 }
 section .mainpageText :not(b, button){
   color: rgb(117, 113, 113); 
@@ -36,10 +40,11 @@ section .mainpageText p{
   background: #000;
   color: #fff;
   margin-top: .2rem;
-  padding: 0.6rem 1.4rem;
+  padding: 0.8rem 1.8rem;
   text-transform: uppercase;
   font-size: 0.9rem;
   border: unset;
+  border-radius: 5px;
 }
 
 .active {
@@ -249,10 +254,6 @@ background-position:50% 50%;
   .category span {
     margin-left: 0 !important;
     font-size: 1rem !important;
-  }
-  section .mainpageText {
-    width: 60%;
-    right: 10%;
   }
   .trendinSection {
     display: flex;

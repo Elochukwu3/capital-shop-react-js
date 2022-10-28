@@ -46,7 +46,8 @@ export default function Main({ children, stying, counter }) {
         key={index}
         style={changeColor(img)}
       >
-        <section className="mainpageText">
+       <div className="mainnBeforeText">
+       <section className="mainpageText">
           <p>Fashion Sale</p>
           <b style={{ textTransform: "capitalize", margin: 0 }}>{boldText}</b>
           <Segment
@@ -54,9 +55,10 @@ export default function Main({ children, stying, counter }) {
             textAlign="center"
             style={{
               padding: "0 .1rem",
-              opacity: ".6",
+              opacity: ".9",
               widih: "140px",
               minWidth: "120px",
+              maxWidth: "500px",
               fontSize: '1.5em',
               color:'#ffff',
               textShadow:'2px 2px 2px #000',
@@ -67,6 +69,7 @@ export default function Main({ children, stying, counter }) {
           </Segment>
           <MainButton name="shop Now" />
         </section>
+       </div>
       </div>
     );
   });
