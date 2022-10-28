@@ -10,11 +10,11 @@ import Testimonial from "./body/Testimonial";
 import CardHolder from "./body/CardHolder";
 import Icons from "./body/Icons";
 import Footer from "./body/Footer";
+import { ArrowLeftCircle, ArrowRightCircle } from "react-bootstrap-icons";
 
 function App() {
   const [carousel, setCarousel] = useState(0);
   const styling = useRef();
-  console.log(carousel + "each");
   const forwardCarousel = () => {
     setCarousel((prev) =>
       prev < sliderData.length - 4 ? prev + 1 : (prev = 0)
@@ -45,14 +45,19 @@ function App() {
           </Main>
         </section>
         <section className={"sliderSection"}>
+        <span className="arrow left" onClick={prevCarousel}>
+        {" "}
+        <ArrowLeftCircle/>
+      </span>
           <div className="sliderWrapper">
             <Slider
-              handleEvent={forwardCarousel}
               counter={carousel}
-              handleEventDec={prevCarousel}
               slider={sliderData}
             />
           </div>
+          <span className="arrow right" onClick={forwardCarousel}>
+        <ArrowRightCircle/>
+      </span>
         </section>
         <div className="testimonialContainer">
           <Testimonial />

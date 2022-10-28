@@ -6,12 +6,6 @@ export const data =
 
 },
 {
-    img:'.//images/fgh.jpg',
-    text:" Always dress like it's the best day of your life.",
-    boldText:' minimal menz style'
-
-},
-{
     img:'.//images/fashion1.webp',
     text:' Pellentesque habitant morbi tristique senectus et netus et malesuada fames   ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,',
     boldText:' minimal menz style'
@@ -28,7 +22,6 @@ export const data =
     img:'.//images/women3.jpeg',
     text:' Pellentesque habitant morbi tristique senectus et netus et malesuada fames   ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,',
     boldText:' minimal menz style'
-
 }
 ];
 export const sliderData =

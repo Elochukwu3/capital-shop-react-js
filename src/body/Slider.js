@@ -37,13 +37,7 @@ export default function Slider({
             );
           })
         : ""}
-      <span className="arrow left" onClick={handleEventDec}>
-        {" "}
-        <ArrowLeftCircle />
-      </span>
-      <span className="arrow right" onClick={handleEvent}>
-        <ArrowRightCircle />
-      </span>
+
     </>
   );
 }

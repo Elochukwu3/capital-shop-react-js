@@ -81,7 +81,7 @@ export default function Main({ children, stying, counter }) {
       <div className="trendinSection">
         <div>Trending This Week</div>
         <div className="middleMenu">
-          <ul style={{ display: "flex" }} ref={stying}>
+          <ul style={{ display: "flex", alignItems:'center' }} ref={stying}>
             <li>Men</li>
             <li>Women</li>
             <li>Baby</li>
