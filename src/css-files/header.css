@@ -6,19 +6,22 @@
 }
 html
 {
-  overflow: hidden;
+  overflow: hidden !important;overflow-y: auto;
+}
+body{
+  overflow-x: hidden !important;
 }
 
 header.firstHeader {
   background: #fff;
   padding: 0.6rem 0;
   box-shadow: 1px 0px 2px 5px #ccc;
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%; */
   font-family: "Roboto", sans-serif;
+  color: rgb(148, 145, 145);
+  /* font-size: .6rem !important; */
+}
+header .firstHeader .roww{
+  padding-top: 0!important;
 }
 .navList{
   display: flex !important;
@@ -31,7 +34,6 @@ nav .item{
   color: black;
 }
 summary span{
-  /* display: block; */
   position: absolute;
   top: -1.4rem;
   background-color: red;
@@ -65,3 +67,90 @@ details{
   background: #ccc;
   color: black;
 }
+.mobileIcon{
+  display: none !important;
+}
+
+
+@media screen and (max-width: 600px) {
+  .Horizontal .ui.list.row{
+    flex-direction: column!important;
+    /* background-color: #000; */
+   }
+  .mobileIcon{
+    display: flex !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+    background-color: rgb(126, 123, 123);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  header.firstHeader {
+    display: none !important;
+  } 
+ .Horizontal{
+  position: absolute !important;
+  z-index: 99;
+  color: #fff !important;
+  top: 100%;
+  left: 0;
+  width: 10rem !important;
+  font-size: 1.1rem !important;
+ }  
+.Horizontal .ui.horizontal.list.row{
+  /* flex-direction: row !important; */
+  display: block !important;
+  /* background-color: gray; */
+ }
+ #menuCont{
+  justify-content: space-around !important;
+  padding: 1rem 0 !important;
+  background-color: snow;
+  flex-wrap: wrap !important;
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+ }
+ #col{
+  width: auto !important;
+ }
+
+ nav .ui.container {
+
+  margin: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+}
+.ui.grid > *{
+  padding: 0 0 !important;
+}
+.ui.horizontal.list > .item {margin: 0 !important;}
+.md-subheader{
+  margin-top: 3.7rem !important;
+  padding: 2rem 1rem !important;
+}
+.fas{
+  font-size: 1.3rem;
+  color: #fff;
+  margin: auto !important;
+  -webkit-tap-highlight-color: transparent;
+  -moz-user-select: none;
+  transition: transform 600ms;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.fa-bars{
+  transform: rotate(180deg);
+  
+}
+}
+
+

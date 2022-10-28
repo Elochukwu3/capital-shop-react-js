@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Image, Segment } from "semantic-ui-react";
+import {Segment } from "semantic-ui-react";
 import MainButton from "./MainButton";
 import "../css-files/Main.css";
 import { data } from "../Data";
