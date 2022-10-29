@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Blog() {
   return (
-    <div>
-        Blog page
+    <div style={{background:'grey', minHeight:'100vh'}}>
+        <h1>under Development!!!!!</h1>
     </div>
   )
 }

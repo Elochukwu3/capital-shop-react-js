@@ -80,7 +80,9 @@ details{
     display: block !important;
     text-align: left !important;
     box-shadow: 0px 0px 1px #000;
-  
+   }
+   .Horizontal .ui.list.row a {
+    color: #fff !important;
    }
   .mobileIcon{
     display: flex !important;
@@ -91,8 +93,8 @@ details{
     justify-content: center;
     align-items: center;
   }
-  .Horizontal .ui.list.row> div {
-    padding: 1rem 1rem !important;
+  .Horizontal .ui.list.row> a {
+    padding: 2rem 1rem !important;
     margin: 0 !important;
     font-size: 1.4rem;
     color:#fff;
@@ -113,6 +115,7 @@ details{
   font-size: 1.1rem !important;
   transition: transform 600ms ease-in-out;
   display: none;
+  height: 100vh;
  }  
  .Horizontal.active{
   transform: translateX(0px);
@@ -167,7 +170,6 @@ details{
 .dropDown{
   position: relative;
   background: #fff;
-  color: #000;
   margin: 0;
   padding:1rem .3rem !important;
   cursor: pointer;
@@ -177,9 +179,17 @@ details{
   font-size: 1.1rem;
 
 }
+.dropDown a{
+  color: #000 !important;
+}
 summary{
-  font-size: .9017rem;
+  /* font-size: .9017rem; */
   padding: 0 !important;
+  padding-bottom: 1rem !important;
+  color: #fff;
+}
+summary a, p{
+  color: #000 !important;
 }
 }
 .serchCo{

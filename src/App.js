@@ -10,6 +10,7 @@ import Men from './pages/Men';
 import Women from './pages/Women';
 import Sweater from './pages/Sweater';
 import NotFound from './pages/NotFound';
+import './css-files/page.css'
 function App() {
 
   return (

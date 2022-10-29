@@ -38,7 +38,7 @@ export default function HeaderTwo() {
             <List.Item as={Link} to='page'>Pages</List.Item>
             <List.Item>
               <details>
-                <summary><Link>Baby Collections</Link></summary>
+                <summary>Baby Collections</summary>
                 <div className="dropDown">
                   <p>Cloths</p>
                   <p>Shoes</p>

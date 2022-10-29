@@ -1,0 +1,39 @@
+a{
+    color: black !important;
+}
+h3, h4{
+    text-align: center;
+    color: #fff;
+}
+.display-items{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.dispalyImg img{
+    width: 160px;
+    height: 30vh;
+}
+.dispalyImg{
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    color: snow;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact button{
+    width: 50%;
+    background: blue;
+    padding: .7rem 0;
+    font-size: 1.4rem;
+    color: beige;
+    border: unset;
+    margin-top: 10px;
+    border-radius: 6px;
+} 
