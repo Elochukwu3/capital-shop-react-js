@@ -15,7 +15,7 @@ export default function Main({ children, stying, counter }) {
         element.style.borderBottom = "4px solid red";
       }
     });
-  }, [counter]);
+  }, [counter.count, stying]);
 
   const changeColor = (m) => {
     return {

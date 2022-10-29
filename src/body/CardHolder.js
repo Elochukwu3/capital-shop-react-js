@@ -6,7 +6,7 @@ export default function CardHolder({ header, image, description }) {
       style={{ boxShadow: "none", textAlign: "left", margin: "0 0" }}
     >
       <div className="image" style={{ borderRadius: "0" }}>
-        <img src={image} style={{ borderRadius: "0" }} />
+        <img src={image} style={{ borderRadius: "0" }} alt={description}/>
       </div>
       <div className="content" style={{ padding: "0 .4rem" }}>
         <div className="meta" style={{ padding: "1em .4rem" }}>

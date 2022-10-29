@@ -28,7 +28,7 @@ section .mainpageText :not(b, button) {
 }
 section .mainpageText p {
   font-family: "Rouge Script", cursive;
-  color: red;
+  color: red !important;
   font-size: 3em;
   padding-bottom: 0.7rem;
   margin: 0 !important;

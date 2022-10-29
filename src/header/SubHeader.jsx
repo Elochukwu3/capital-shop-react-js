@@ -1,4 +1,4 @@
-import { Container, Segment } from "semantic-ui-react";
+import {Segment } from "semantic-ui-react";
 
 export default function SubHeader() {
   return (

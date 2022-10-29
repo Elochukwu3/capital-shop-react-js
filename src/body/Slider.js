@@ -22,7 +22,7 @@ export default function Slider({
                 ref={slid}
                 style={{ transform: `translateX(${counter}00%)` }}
               >
-                <img src={img} />
+                <img src={img} alt={price}/>
                 <p>{text}</p>
                 <span>{price}</span>{" "}
                 <span
