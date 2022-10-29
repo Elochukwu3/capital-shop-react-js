@@ -33,23 +33,23 @@ export default function HeaderTwo() {
             
             <List.Item style={{ padding: "0" }} as={Link} to='/'>Home</List.Item>
           
-            <List.Item>Men</List.Item>
-            <List.Item>Women</List.Item>
-            <List.Item>Pages</List.Item>
+            <List.Item as={Link} to='/men'>Men</List.Item>
+            <List.Item as={Link} to='/women'>Women</List.Item>
+            <List.Item as={Link} to='page'>Pages</List.Item>
             <List.Item>
               <details>
-                <summary>Baby Collections</summary>
+                <summary><Link>Baby Collections</Link></summary>
                 <div className="dropDown">
                   <p>Cloths</p>
                   <p>Shoes</p>
                   <p>Napkin</p>
                   <p>Stockins</p>
-                  <p>Sweater</p>
+                  <Link to={'/sweater'}><p>Sweater</p></Link>
                 </div>
               </details>
             </List.Item>
-            <List.Item>Blog</List.Item>
-            <List.Item>Contact</List.Item>
+            <List.Item as={Link} to='/blog'>Blog</List.Item>
+            <List.Item as={Link} to='/contact'>Contact</List.Item>
           </List>
         </Grid.Column>
         <Grid.Column
