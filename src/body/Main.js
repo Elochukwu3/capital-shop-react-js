@@ -11,7 +11,7 @@ export default function Main({ children, stying, counter }) {
     tags = [...tags];
     tags.forEach((element, index) => {
       element.style.borderBottom = "none";
-      if (counter === index) {
+      if (counter.count + 1 === index) {
         element.style.borderBottom = "4px solid red";
       }
     });

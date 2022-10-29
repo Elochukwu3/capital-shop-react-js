@@ -6,7 +6,6 @@ const iconStyle={
     textAlign:'center',
     padding:'0 2rem',
     boxShadow:'0px 0px 1px 2px #ff',
-    // width:'160px',
     borderRight:'1px solid #ccc'
 }
 export default function Icons({icons, captions, msg}) {

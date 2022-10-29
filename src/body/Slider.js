@@ -1,24 +1,25 @@
-import { ArrowLeftCircle, ArrowRightCircle } from "react-bootstrap-icons";
+
 export default function Slider({
-  handleEvent,
   counter,
-  handleEventDec,
   slider,
-  styling,
+  slid
 }) {
+  
+
   return (
     <>
       {slider.length > 0
         ? slider.map(({ img, price, discount, text, id }, index) => {
+          // console.log(index, 'innn');
             return (
               <div
-                ref={styling}
                 className={
-                  counter === index
-                    ? "active-slide sliderContainer"
-                    : "sliderContainer"
+                  counter === index?
+                    "active-slide sliderContainer":
+                   "sliderContainer"
                 }
                 key={id}
+                ref={slid}
                 style={{ transform: `translateX(${counter}00%)` }}
               >
                 <img src={img} />

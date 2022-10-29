@@ -13,17 +13,48 @@ import Footer from "./body/Footer";
 import { ArrowLeftCircle, ArrowRightCircle } from "react-bootstrap-icons";
 
 function App() {
-  const [carousel, setCarousel] = useState(0);
+  const [carousel, setCarousel] = useState({
+    count: 0,
+    countTwo: 0,
+  });
+
   const styling = useRef();
+
   const forwardCarousel = () => {
-    setCarousel((prev) =>
-      prev < sliderData.length - 4 ? prev + 1 : (prev = 0)
-    );
+    setCarousel((prev) => ({
+      ...prev,
+      count:
+        prev.count === sliderData.length - 5
+          ? (prev.count = -2)
+          : prev.count + 1,
+    }));
   };
+  const forwardCarouselTwo = () => {
+    setCarousel((prev) => ({
+      ...prev,
+      countTwo:
+        prev.countTwo === sliderData.length - 5
+          ? (prev.countTwo = -2)
+          : prev.countTwo + 1,
+    }));
+  };
+  
   const prevCarousel = () => {
-    setCarousel((prev) =>
-      prev <= 0 ? (prev = sliderData.length - 4) : prev - 1
-    );
+    setCarousel((prev) => ({
+      ...prev,
+      count:
+        prev.count < -1 ? (prev.count = sliderData.length - 4) : prev.count - 1,
+    }));
+  };
+
+  const prevCarouselTwo = () => {
+    setCarousel((prev) => ({
+      ...prev,
+      countTwo:
+        prev.countTwo < -1
+          ? (prev.countTwo = sliderData.length - 4)
+          : prev.countTwo - 1,
+    }));
   };
 
   return (
@@ -45,32 +76,35 @@ function App() {
           </Main>
         </section>
         <section className={"sliderSection"}>
-        <span className="arrow left" onClick={prevCarousel}>
-        {" "}
-        <ArrowLeftCircle/>
-      </span>
+          <span className="arrow left" onClick={prevCarousel}>
+            {" "}
+            <ArrowLeftCircle />
+          </span>
           <div className="sliderWrapper">
             <Slider
-              counter={carousel}
+              counter={carousel.count}
+              handleEventDec={prevCarousel}
               slider={sliderData}
             />
           </div>
           <span className="arrow right" onClick={forwardCarousel}>
-        <ArrowRightCircle/>
-      </span>
+            <ArrowRightCircle />
+          </span>
         </section>
         <div className="testimonialContainer">
           <Testimonial />
         </div>
         <section className={"sliderSection"}>
+          <span className="arrow left" onClick={prevCarouselTwo}>
+            {" "}
+            <ArrowLeftCircle />
+          </span>
           <div className="sliderWrapper">
-            <Slider
-              handleEvent={forwardCarousel}
-              counter={carousel}
-              handleEventDec={prevCarousel}
-              slider={sliderData}
-            />
+            <Slider counter={carousel.countTwo} slider={sliderData} />
           </div>
+          <span className="arrow right" onClick={forwardCarouselTwo}>
+            <ArrowRightCircle />
+          </span>
         </section>
         <section
           style={{
@@ -78,10 +112,12 @@ function App() {
             marginTop: "3rem",
             padding: "1rem 0",
             minHeight: "0",
-            paddingBottom:'3rem'
+            paddingBottom: "3rem",
           }}
         >
-          <h2 style={{ padding: "2rem 0 1rem 0", textAlign:'center' }}>Latest News</h2>
+          <h2 style={{ padding: "2rem 0 1rem 0", textAlign: "center" }}>
+            Latest News
+          </h2>
           <div
             style={{
               display: "flex",
@@ -148,7 +184,7 @@ function App() {
           />
         </article>
         <footer>
-          <Footer/>
+          <Footer />
         </footer>
       </main>
     </div>
