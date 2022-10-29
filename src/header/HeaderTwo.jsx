@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Cart, Person, Search } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 import { Grid, Image, List } from "semantic-ui-react";
 import "../css-files/header.css";
 
@@ -29,7 +30,9 @@ export default function HeaderTwo() {
             style={{ display: "flex", fontSize: "1rem", alignItems: "center", textTransform:'uppercase' }}
             id="roww"
           >
-            <List.Item style={{ padding: "0" }}>Home</List.Item>
+            
+            <List.Item style={{ padding: "0" }} as={Link} to='/'>Home</List.Item>
+          
             <List.Item>Men</List.Item>
             <List.Item>Women</List.Item>
             <List.Item>Pages</List.Item>
